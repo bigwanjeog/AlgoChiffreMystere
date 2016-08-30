@@ -1,13 +1,17 @@
 package algochiffremystere;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
  * Created by RENAUD on 30/08/2016.
  */
 public class AlgoChiffreMystere {
+
     public static void main(String[] args) {
-        int numMystere = (int) (Math.random()*100 + 1);
+
+        Random rdm = new Random();
+        int numMystere = rdm.nextInt(100) + 1;
         int numTest = 0;//numéro entré a tester
         int cptTest = 0;//nombre de test effectué
         int nbDeTest = 0;//nombre max de test
